@@ -1,0 +1,77 @@
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+body {
+    font-family: monospace, sans-serif;
+    background-color: gray;
+    margin: 0;
+    padding: 0;
+}
+.hero {
+    color: white;
+    font-family: monospace, sans-serif;
+    text-align: center;
+    padding: 50px 20px;
+}
+.hero-image {
+    width: 100%;
+    height: 400px;
+    background: url("assets/ilocos.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.hero-text {
+    text-align: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    color: rgb(216, 208, 92);
+    text-transform: uppercase;
+}
+header {
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+.navbar {
+    position: sticky;
+    top: 0%;
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+.navbar a {
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.navbar li {
+    display: inline-block;
+    margin: 0 10px;
+}
+.navbar a:hover {
+    background-color: #ffffff;
+    color: black;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 100px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 20px;
+}
