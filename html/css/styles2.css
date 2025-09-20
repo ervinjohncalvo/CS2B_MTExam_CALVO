@@ -86,6 +86,13 @@ section {
 .contact-info h2 {
     margin-bottom: 10px;
 }
+/* Embedded Map Styles */
+iframe {
+    width: 50%;
+    height: 300px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
 /* Contact Info Paragraphs */
 .contact-info p {
     margin: 5px 0;
@@ -125,7 +132,6 @@ section {
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-
 footer {
     background-color: #333;
     color: white;
