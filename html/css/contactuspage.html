@@ -4,43 +4,93 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles2.css" />
+    <script src="script2.js"></script>
     <title>Contact Us Page</title>
   </head>
   <body>
     <header>
       <div class="hero-image"></div>
-      <div class="navbar">
+      <nav class="navbar">
         <ul>
           <li class="title"><a href="homepage.html">Ilocos Sur Spot</a></li>
           <li><a href="homepage.html">Home</a></li>
           <li><a href="#">Ilocos Sur</a></li>
           <li><a href="contactuspage.html">Contact Us Page</a></li>
         </ul>
-      </div>
-    </div>
+      </nav>
     </header>
 
     <main>
-      <section class="contact-info">
-        <h2>Get in Touch</h2>
-        <p>If you have any questions or inquiries, feel free to reach out to us!</p>
+      <!-- Main Section -->
+      <section>
+        <!-- Contact Us Banner -->
+        <section class="contact-info">
+          <h2>Get in Touch</h2>
+          <p>
+            If you have any questions or inquiries, feel free to reach out to
+            us!
+          </p>
+        </section>
+
+        <!-- Contact Form -->
+        <section class="contact-form">
+          <h2>Contact Form</h2>
+          <form action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required />
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button id="submit" onclick="subbutton()">Send Message</button>
+          </form>
+        </section>
+
+        <!-- Embedded Location + Locale Contact Info -->
+        <section class="location-info">
+          <h2>Our Location</h2>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3872.019934799585!2d120.3897!3d17.5747!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x338ecf1e1e1e1e1e%3A0x1234567890abcdef!2sVigan%20City%2C%20Ilocos%20Sur!5e0!3m2!1sen!2sph!4v1690000000000!5m2!1sen!2sph"
+            width="100%"
+            height="200"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+          <div class="locale-contact">
+            <p><strong>Address:</strong> Vigan City, Ilocos Sur, Philippines</p>
+            <p><strong>Phone:</strong> 0950-5096-6666</p>
+            <p><strong>Email:</strong> calvo@ilocossurspot.com</p>
+          </div>
+        </section>
       </section>
 
-      <section class="contact-form">
-        <h2>Contact Form</h2>
-        <form action="#" method="post">
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="name" required />
-
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required />
-
-          <label for="message">Message:</label>
-          <textarea id="message" name="message" rows="4" required></textarea>
-
-          <button type="submit">Send Message</button>
-        </form>
-      </section>
+      <!-- Aside -->
+      <aside style="flex-basis: 20%; min-width: 220px">
+        <div class="portrait-photo" style="text-align: center">
+          <img
+            src="assets/CALVO.jpg"
+            alt="Ervin John Calvo"
+            style="
+              width: 100%;
+              aspect-ratio: 3/4;
+              object-fit: cover;
+              border-radius: 8px;
+            "
+          />
+        </div>
+        <div class="personal-info">
+          <h3>Ervin John Calvo</h3>
+          <p><strong>Developer</strong></p>
+          <p>Email: ervinjohncalvo@gmail.com</p>
+          <p>Phone: 0950-5096-6666</p>
+          <p>Location: Vigan City, Ilocos Sur</p>
+        </div>
+      </aside>
     </main>
 
     <footer>
